@@ -1,5 +1,6 @@
 package com.isystem.taskmanagerapi.service;
 
+import com.isystem.taskmanagerapi.enums.Status;
 import com.isystem.taskmanagerapi.model.Task;
 import com.isystem.taskmanagerapi.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,4 +38,5 @@ public class TaskService {
     public void deleteTask(Long id) {
         taskRepository.deleteById(id);
     }
+
 }
